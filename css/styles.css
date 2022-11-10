@@ -12,7 +12,6 @@
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .bg-orange {
   background-color: var(--orange);
@@ -127,6 +126,15 @@ p.lead {
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
+#sideNav .navbar-brand {
+display: flex;
+align-items: center;
+}
+#sideNav .navbar-brand .img-profile {
+  max-width:3.4rem;
+  max-height:3.4rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+}
 
 @media (min-width: 992px) {
   #sideNav {
@@ -169,6 +177,7 @@ p.lead {
     display: block;
   }
 }
+
 
 .social-icons{
   display: flex;
@@ -216,8 +225,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
